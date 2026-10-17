@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "crystalshield-hub",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": ["-c", "cd '/Users/ashikhrahimanm/Documents/crystalshield-hub' && DATA_DIR=./data-dev PORT=4200 ADMIN_EMAIL=admin@crystalshield.ae ADMIN_PASSWORD=CrystalDemo2026 exec $HOME/.local/node/bin/node --watch server/index.js"],
+      "port": 4200
+    }
+  ]
+}
