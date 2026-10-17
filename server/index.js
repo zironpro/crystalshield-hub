@@ -482,5 +482,12 @@ io.on('connection', (socket) => {
   });
 });
 
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.error(`[hub] Port ${PORT} is already in use — Crystal Shield Hub is probably already running: open http://localhost:${PORT}\n      (or stop the other copy: lsof -ti tcp:${PORT} | xargs kill)`);
+    process.exit(1);
+  }
+  throw err;
+});
 server.listen(PORT, () => console.log(`[hub] Crystal Shield Hub running on http://localhost:${PORT}`));
 module.exports = { app, ctx };
