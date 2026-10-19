@@ -85,6 +85,7 @@ ul.bul{margin:4px 0 0;padding-left:18px;font-size:12px;color:#333b4d}ul.bul li{m
 .stamp{position:absolute;right:18mm;top:58mm;transform:rotate(-12deg);border:3px solid #17703f;color:#17703f;font:700 22px Poppins;letter-spacing:.1em;padding:6px 16px;border-radius:10px;opacity:.85}
 .stamp.void{border-color:#b42318;color:#b42318}
 @media (max-width:820px){.page{width:auto;min-height:0;margin:0;padding:18px 16px;box-shadow:none}.grid2,.cols,.sign{grid-template-columns:1fr}.top{flex-direction:column}.doctitle{text-align:left}.meta{margin-left:0}.meta td{text-align:left;padding:2px 14px 2px 0}.sum{flex-direction:column}.totals{width:100%}.it img{width:44px;height:44px}.stamp{top:14px;right:14px;font-size:15px}}
+@media (hover:none) and (pointer:coarse){input,select,textarea{font-size:16px!important}}
 @media print{body{background:#fff}.bar,.accept,.noprint{display:none!important}.page{margin:0;box-shadow:none;width:auto;min-height:0;padding:0}@page{size:A4;margin:12mm}tr{page-break-inside:avoid}}
 </style></head><body>
 <div class="bar noprint"><span class="st">${status}</span>${toolbar}<button class="btn primary" onclick="window.print()">⎙ Print / Save as PDF</button></div>

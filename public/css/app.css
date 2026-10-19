@@ -634,3 +634,8 @@ button.list-row { all: unset; cursor: pointer; display: flex; align-items: cente
   .sidebar, .mobile-bar, .bottom-bar, .toolbar, .btn, .icon-btn, .tabs, .update-bar, .notify-banner { display: none !important; }
   .main { margin: 0; } body { background: #fff; } .card { box-shadow: none; }
 }
+
+/* iPhone / iPad zoom into any field smaller than 16px — keep fields at 16px on touch screens */
+@media (hover: none) and (pointer: coarse) {
+  input, select, textarea { font-size: 16px !important; }
+}
